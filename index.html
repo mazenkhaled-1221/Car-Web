@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elite Cars | Luxury Car Showroom</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <h2 class="logo">
+            Elite <span>Cars</span>
+        </h2>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#HOME">HOME</a>
+            </li>
+
+            <li>
+                <a href="#CARS">CARS</a>
+            </li>
+
+            <li>
+                <a href="#ABOUT">ABOUT US</a>
+            </li>
+
+            <li>
+                <a href="#CONTACT">CONTACT</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="HOME">
+
+        <div class="hero-text">
+
+            <p class="hero-small">
+                PREMIUM CAR DEALERSHIP
+            </p>
+
+            <h1>
+                Find Your
+                <span>Dream Car</span>
+            </h1>
+
+            <p class="hero-description">
+                اكتشف مجموعة مميزة من السيارات الفاخرة
+                والجديدة والمستعملة بأفضل الأسعار.
+            </p>
+
+            <button id="carsbutton" class="hero-btn">
+                Explore Cars
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="hero-glow"></div>
+
+            <img src="car.png" alt="Luxury Car">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="stat">
+
+            <i class="fa-solid fa-car"></i>
+
+            <h2 class="counter" data-target="500">
+                0
+            </h2>
+
+            <p>Cars Sold</p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h2 class="counter" data-target="1000">
+                0
+            </h2>
+
+            <p>Happy Clients</p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h2 class="counter" data-target="15">
+                0
+            </h2>
+
+            <p>Years Experience</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CARS ================= -->
+
+    <section class="cars" id="CARS">
+
+        <div class="section-title">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>
+                Featured <span>Cars</span>
+            </h2>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-section">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search for a car..."
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTER -->
+
+        <div class="filter-buttons">
+
+            <button
+                class="filter-btn active"
+                data-filter="all">
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="bmw">
+                BMW
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="mercedes">
+                Mercedes
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="audi">
+                Audi
+            </button>
+
+        </div>
+
+
+        <!-- SORT -->
+
+        <div class="sort-section">
+
+            <label for="sort">
+                Sort:
+            </label>
+
+            <select id="sort">
+
+                <option value="default">
+                    Default
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- CARS CONTAINER -->
+
+        <div class="cars-container">
+
+
+            <!-- BMW -->
+
+            <div
+                class="card"
+                data-name="bmw"
+                data-price="3500000"
+            >
+
+                <div class="card-image">
+
+                    <img
+                        src="bmw.png"
+                        alt="BMW M4"
+                    >
+
+                    <button
+                        class="favorite-btn"
+                        data-car="bmw"
+                    >
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <span class="featured">
+                        FEATURED
+                    </span>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="brand">
+                        BMW
+                    </p>
+
+                    <h3>
+                        BMW M4
+                    </h3>
+
+                    <div class="car-info">
+
+                        <span>
+                            <i class="fa-solid fa-calendar"></i>
+                            2025
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gauge-high"></i>
+                            510 HP
+                        </span>
+
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <p class="price">
+                            3,500,000
+                            <small>EGP</small>
+                        </p>
+
+                        <button
+                            class="details-btn"
+                            data-car="bmw"
+                        >
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MERCEDES -->
+
+            <div
+                class="card"
+                data-name="mercedes"
+                data-price="2900000"
+            >
+
+                <div class="card-image">
+
+                    <img
+                        src="mercedes.png"
+                        alt="Mercedes C200"
+                    >
+
+                    <button
+                        class="favorite-btn"
+                        data-car="mercedes"
+                    >
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="brand">
+                        MERCEDES
+                    </p>
+
+                    <h3>
+                        Mercedes C200
+                    </h3>
+
+                    <div class="car-info">
+
+                        <span>
+                            <i class="fa-solid fa-calendar"></i>
+                            2025
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gauge-high"></i>
+                            204 HP
+                        </span>
+
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <p class="price">
+                            2,900,000
+                            <small>EGP</small>
+                        </p>
+
+                        <button
+                            class="details-btn"
+                            data-car="mercedes"
+                        >
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- AUDI -->
+
+            <div
+                class="card"
+                data-name="audi"
+                data-price="4100000"
+            >
+
+                <div class="card-image">
+
+                    <img
+                        src="audi.png"
+                        alt="Audi RS5"
+                    >
+
+                    <button
+                        class="favorite-btn"
+                        data-car="audi"
+                    >
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="card-content">
+
+                    <p class="brand">
+                        AUDI
+                    </p>
+
+                    <h3>
+                        Audi RS5
+                    </h3>
+
+                    <div class="car-info">
+
+                        <span>
+                            <i class="fa-solid fa-calendar"></i>
+                            2025
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gauge-high"></i>
+                            450 HP
+                        </span>
+
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <p class="price">
+                            4,100,000
+                            <small>EGP</small>
+                        </p>
+
+                        <button
+                            class="details-btn"
+                            data-car="audi"
+                        >
+                            Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="why-us" id="ABOUT">
+
+        <div class="section-title">
+
+            <p>WHY ELITE CARS?</p>
+
+            <h2>
+                Why Choose <span>Us?</span>
+            </h2>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>
+                    Guaranteed Cars
+                </h3>
+
+                <p>
+                    جميع سياراتنا يتم فحصها بدقة
+                    قبل البيع لضمان أفضل جودة.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                <h3>
+                    Best Prices
+                </h3>
+
+                <p>
+                    أسعار تنافسية وخيارات متعددة
+                    تناسب احتياجاتك.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>
+                    Premium Support
+                </h3>
+
+                <p>
+                    فريق متخصص جاهز لمساعدتك
+                    والإجابة على جميع استفساراتك.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="testimonials">
+
+        <div class="section-title">
+
+            <p>CLIENT REVIEWS</p>
+
+            <h2>
+                What Our <span>Clients Say</span>
+            </h2>
+
+        </div>
+
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    تجربة ممتازة جدًا، العربية كانت
+                    مطابقة للوصف والتعامل كان محترم.
+                </p>
+
+                <h4>
+                    Mohamed Ahmed
+                </h4>
+
+            </div>
+
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    أسعار ممتازة وخدمة احترافية.
+                    أنصح أي حد يشتري عربية من Elite Cars.
+                </p>
+
+                <h4>
+                    Ahmed Khaled
+                </h4>
+
+            </div>
+
+
+            <div class="testimonial-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    من أفضل تجارب شراء السيارات
+                    اللي خضتها.
+                </p>
+
+                <h4>
+                    Sara Ali
+                </h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="CONTACT">
+
+        <div class="section-title">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>
+                Contact <span>Us</span>
+            </h2>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h2>
+            Elite <span>Cars</span>
+        </h2>
+
+        <p>
+            Luxury Cars Showroom
+        </p>
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 Elite Cars. All Rights Reserved.
+        </p>
+
+        <p>
+            Designed & Developed by <a href="https://mazen-khaled.vercel.app/"><p id="mazen">Mazen Khaled</p></a>
+        </p>
+
+    </footer>
+
+<!-- ================= CAR MODAL ================= -->
+
+<div class="modal" id="carModal">
+
+    <div class="modal-content">
+
+        <!-- CLOSE -->
+
+        <button class="close" id="closeModal" type="button">
+            &times;
+        </button>
+
+
+        <!-- GALLERY -->
+
+        <div class="modal-gallery">
+
+            <button
+                class="gallery-arrow gallery-prev"
+                id="galleryPrev"
+                type="button"
+            >
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+
+            <img
+                id="carImage"
+                src="bmw.png"
+                alt="Car"
+            >
+
+
+            <button
+                class="gallery-arrow gallery-next"
+                id="galleryNext"
+                type="button"
+            >
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+
+        <!-- THUMBNAILS -->
+
+        <div
+            class="gallery-thumbnails"
+            id="galleryThumbnails"
+        ></div>
+
+
+        <!-- CAR INFO -->
+
+        <div class="modal-info">
+
+            <p
+                class="brand"
+                id="carBrand"
+            >
+                BMW
+            </p>
+
+
+            <h2 id="carTitle">
+                BMW M4
+            </h2>
+
+
+            <p
+                id="carPrice"
+                class="modal-price"
+            >
+                Price: 3,500,000 EGP
+            </p>
+
+
+            <!-- SPECIFICATIONS -->
+
+            <div class="modal-specs">
+
+                <div class="spec">
+
+                    <i class="fa-solid fa-gears"></i>
+
+                    <div>
+                        <small>Engine</small>
+                        <p id="carEngine"></p>
+                    </div>
+
+                </div>
+
+
+                <div class="spec">
+
+                    <i class="fa-solid fa-horse"></i>
+
+                    <div>
+                        <small>Power</small>
+                        <p id="carPower"></p>
+                    </div>
+
+                </div>
+
+
+                <div class="spec">
+
+                    <i class="fa-solid fa-gauge-high"></i>
+
+                    <div>
+                        <small>Top Speed</small>
+                        <p id="carSpeed"></p>
+                    </div>
+
+                </div>
+
+
+                <div class="spec">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    <div>
+                        <small>Year</small>
+                        <p id="carYear"></p>
+                    </div>
+
+                </div>
+
+
+                <div class="spec">
+
+                    <i class="fa-solid fa-road"></i>
+
+                    <div>
+                        <small>Mileage</small>
+                        <p id="carMileage"></p>
+                    </div>
+
+                </div>
+
+
+                <div class="spec">
+
+                    <i class="fa-solid fa-gas-pump"></i>
+
+                    <div>
+                        <small>Fuel</small>
+                        <p id="carFuel"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="modal-actions">
+
+                <a
+                    href="#"
+                    id="whatsappBtn"
+                    class="whatsapp-btn"
+                    target="_blank"
+                >
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Ask About This Car
+                </a>
+
+
+                <button
+                    id="shareBtn"
+                    class="share-btn"
+                    type="button"
+                >
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Share
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= SHARE MENU ================= -->
+
+<div class="share-menu" id="shareMenu">
+
+    <div class="share-box">
+
+        <button
+            class="close-share"
+            id="closeShare"
+            type="button">
+            &times;
+        </button>
+
+        <h3>Share This Car</h3>
+
+        <p>Share this car with your friends</p>
+
+        <div class="share-options">
+
+            <button
+                class="share-option copy-link"
+                id="copyLink"
+                type="button">
+                <i class="fa-solid fa-link"></i>
+                Copy Link
+            </button>
+
+            <button
+                class="share-option whatsapp-share"
+                id="whatsappShare"
+                type="button">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </button>
+
+            <button
+                class="share-option facebook-share"
+                id="facebookShare"
+                type="button">
+                <i class="fa-brands fa-facebook"></i>
+                Facebook
+            </button>
+
+            <button
+                class="share-option instagram-share"
+                id="instagramShare"
+                type="button">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </button>
+
+        </div>
+
+        <div
+            class="copy-message"
+            id="copyMessage">
+            ✓ Link copied successfully
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
